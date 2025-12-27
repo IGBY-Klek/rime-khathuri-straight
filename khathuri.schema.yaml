@@ -1,0 +1,94 @@
+# Rime schema
+# encoding: utf-8
+
+schema:
+  schema_id: khathuri
+  name: "格鲁吉亚文直打方案"
+  version: "2025.12.28"
+  author:
+    Klek
+  description: "在同文输入法中要搭配与之相匹配的键盘"
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [GEO, LAT]
+
+engine:
+  processors:
+    - ascii_composer
+    - punctuator
+    - express_editor
+  segmentors:
+    - punct_segmentor
+  translators:
+    - punct_translator
+
+punctuator:
+  import_preset: default
+  half_shape:
+  "q": ღ
+  "Q": ღ
+  "w": ჯ
+  "W": ჯ
+  "e": უ	
+  "E": უ	
+  "r": კ
+  "R": კ
+  "t": ე
+  "T": ჱ
+  "y": ნ
+  "Y": ნ
+  "u": გ
+  "U": გ
+  "i": შ
+  "I": შ
+  "o": წ
+  "O": წ
+  "p": ზ
+  "P": ზ
+  "[": ხ
+  "{": ჴ
+  "]": ც
+  "a": ფ
+  "A": ჶ
+  "s": ძ
+  "S": ძ
+  "d": ვ
+  "D": ჳ
+  "f": თ
+  "F": თ
+  "g": ა
+  "G": ა
+  "h": პ
+  "H": პ
+  "j": რ
+  "J": რ
+  "k": ო
+  "K": ო
+  "l": ლ
+  "L": ლ
+  ";": დ
+  ":": დ
+  "'": ჟ
+  """: ჟ
+  "z": ჭ
+  "Z": ჭ
+  "x": ჩ
+  "X": ჩ
+  "c": ყ
+  "C": ყ
+  "v": ს
+  "V": ს
+  "b": მ
+  "B": მ
+  "n": ი
+  "N": ჲ
+  "m": ტ
+  "M": ტ
+  ",": ქ
+  "<": ქ
+  ".": ბ
+  ">": ბ
+  "/": ჰ
+  "?": ჵ
